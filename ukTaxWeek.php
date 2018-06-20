@@ -13,10 +13,42 @@
 Class UKTaxWeeks
 {
   
-  function getTaxWeekByDate($Wdate)
+  function getTaxWeekByDate($wDate,$floorDate = "06/04")
   {
-    $date = strtotime($date);
+    // Get the Tax week number based upon $wDate - The date you're querying - 
+    // and optionally $floorDate, which defaults to the UK tax start 
+    // date of 06/04
     
+    $tDate = strtotime($wDate);
+    
+    $tDay = date("d");
+    $tMonth = date("m");    
+    $tYear = date("Y");
+    
+    if($floorDate == "06/04")
+    {
+      $cDay = 6;
+      $cMonth = 4;
+    } else {
+      $cDay = intval(ltrim($floorDate,2));
+      $cMonth = intval(rtrim($floorDate,2));
+    }
+    
+    
+    if($tMonth > $cMonth)
+    {
+      if ($tDay > $cDay)
+      {
+        //Today is in year 1 - Start of the tax year is in this calendar year
+        
+      }
+    } else
+    {
+      //Today is in year 0 - Start of the tax year was in last calendar year
+      
+    }
+    
+    return $taxweeknumber
   }
 }
 ?>
