@@ -4,7 +4,7 @@
 include_once('class/ukTaxWeek.php');
 
 //instantiate the class
-$taxWeek = new UKTaxWeeks
+$taxWeek = new UKTaxWeeks;
 
 //Get the tax week of the date
 $myDate = "01/06/2018";

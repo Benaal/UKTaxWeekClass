@@ -55,7 +55,7 @@ Class UKTaxWeeks
       $taxWeekNumber = $offset + date("W",$qDate);
     }
     
-    return $taxWeekNumber
+    return $taxWeekNumber;
   }
   
 }
