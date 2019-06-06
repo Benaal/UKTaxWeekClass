@@ -1,10 +1,10 @@
 {
     "name": "kayle/uk-tax-week-class",
     "require": {
-        "citco/carbon": "^1.0"
+        "nesbot/carbon": "^2.19"
     },
     "require-dev": {
-        "citco/carbon": "^1.0"
+        "nesbot/carbon": "^2.19"
     },
     "authors": [
         {

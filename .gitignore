@@ -1,1 +1,12 @@
 /vendor/
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/UKTaxWeekClass/v16/.suo
+.vs/VSWorkspaceState.json
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/UKTaxWeekClass.iml
+.idea/php.xml
+.idea/modules.xml
+.idea/misc.xml
+composer.lock

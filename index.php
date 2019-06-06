@@ -4,13 +4,13 @@
 include_once './class/ukTaxWeek.php';
 
 //instantiate the class
-$taxWeek = new UKTaxWeeks();
+$tax_week = new UKTaxWeeks();
 
 //Get the tax week of the date
-$myDate = '05/04/2018';
-echo "Comparing date $myDate <br />";
-echo 'The tax week of this year is: '.$taxWeek->getTaxWeekByDate($myDate).'<br />';
+$my_date = '13/03/2019';
+echo "Comparing date $my_date <br />";
+echo 'The tax week of this year is: '.$tax_week->getTaxWeekByDate($my_date).'<br />';
 
 //Get tax week of the date when the financial year starts on another day (1st February, for example - 01/02)
-$financialYearStartDate = '01/10';
-echo "if the tax year started on $financialYearStartDate the financial week would be ".$taxWeek->getTaxWeekByDate($myDate, $financialYearStartDate);
+$financial_year_start_date = '01/10';
+echo "if the tax year started on $financial_year_start_date the financial week would be ".$tax_week->getTaxWeekByDate($my_date, $financial_year_start_date);
