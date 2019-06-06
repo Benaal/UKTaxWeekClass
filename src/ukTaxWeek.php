@@ -10,6 +10,8 @@
  * Please consider appropriate references and credits.
  */
 
+namespace kayrah87\UKTaxWeekClass;
+
 use Carbon\Carbon;
 
 class UKTaxWeeks

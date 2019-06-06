@@ -1,8 +1,11 @@
 {
-    "name": "kayle/uk-tax-week-class",
+    "name": "kayrah87/uk-tax-week-class",
+    "description": "Use carbon to calculate UK Tax Weeks for a given date",
+    "type": "package",
     "require": {
         "nesbot/carbon": "^2.19"
     },
+    "license": "mit",
     "require-dev": {
         "nesbot/carbon": "^2.19"
     },
@@ -11,5 +14,11 @@
             "name": "Kay Whitehurst",
             "email": "kayleigh.whitehurst@outlook.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "kayrah87\\UKTaxWeekClass\\": "src"
+        }
+    }
 }

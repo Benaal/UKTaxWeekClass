@@ -1,10 +1,10 @@
 <?php
 
-//include the class once
-include_once './class/ukTaxWeek.php';
+//include the src once
+include_once './src/ukTaxWeek.php';
 
-//instantiate the class
-$tax_week = new UKTaxWeeks();
+//instantiate the src
+$tax_week = new \kayrah87\UKTaxWeekClass\UKTaxWeeks();
 
 //Get the tax week of the date
 $my_date = '13/03/2019';
